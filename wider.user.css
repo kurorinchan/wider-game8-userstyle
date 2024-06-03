@@ -1,11 +1,12 @@
 @-moz-document url-prefix("https://game8.jp/") {
 
     /* ==UserStyle==
-       @name         Wider game8 genshin
+       @name         Wider game8
        @namespace    https://github.com/kurorinchan/
        @version      1.0.0
-       @description  game8 genshin wider main content
+       @description  game8 wider main content
        @author       kurorinchan
+       @license      MIT
        ==/UserStyle== */
     /* Column settings START */
     .l-3colMain {
