@@ -1,0 +1,46 @@
+@-moz-document url-prefix("https://game8.jp/") {
+
+    /* ==UserStyle==
+       @name         Wider game8 genshin
+       @namespace    https://github.com/kurorinchan/
+       @version      1.0.0
+       @description  game8 genshin wider main content
+       @author       kurorinchan
+       ==/UserStyle== */
+    /* Column settings START */
+    .l-3colMain {
+        width: 1000px;
+    }
+
+    .l-3colMain__center {
+        width: 800px !important;
+        margin-left: 0px;
+        float: right;
+    }
+
+    .l-3colMain__left {
+        float: left;
+        width: 200px !important;
+    }
+
+    /* Hide the right column. There's nothing useful in it */
+    .l-3colSide {
+        display: none !important;
+        max-height: 0;
+        max-width: 0;
+    }
+
+    /* Column settings END */
+
+    /* Make images that aren't links bigger. Best effort.
+     # Basically, this makes quest (e.g. world quests) pages' images bigger.
+     * The follwoing classes are not set to "auto" width.
+     * .a-link is a class that is used when the image is a link, e.g. character icon or items.
+     * .a-bold is a class for item itself. E.g the character itself on the character details page.
+     *         Without this, the character's image gets bit on example team comps.
+     * .align means it probably should be aligned to some rule. So ignore them as well.
+     */
+    img.a-img:not(.a-link *):not(.a-bold *):not(.align *) {
+        width: auto !important;
+    }
+}
